@@ -1,0 +1,1 @@
+add_executable(asm2bin asm2bin.cpp assembly_converter.cpp)

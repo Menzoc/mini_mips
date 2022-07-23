@@ -1,0 +1,5 @@
+add_executable(ASM2BIN_DEMO asm2bin_demo.cpp ../asm2bin/assembly_converter.cpp)
+add_executable(EMULATOR_DEMO emulator_demo.cpp ../emulator/binary_processor.cpp ../emulator/memory_processor.cpp ../emulator/bitmap_screen_renderer.cpp)
+target_link_libraries(EMULATOR_DEMO ${SDL2_LIBRARIES})
+add_executable(EMULATOR_PERF ../emulator/memory_processor.cpp ../emulator/binary_processor.cpp ../asm2bin/assembly_converter.cpp emulator_perf.cpp ../emulator/bitmap_screen_renderer.cpp)
+target_link_libraries(EMULATOR_PERF ${SDL2_LIBRARIES})
